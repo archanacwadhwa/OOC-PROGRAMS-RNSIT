@@ -1,0 +1,33 @@
+#include<conio.h>
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a[10][10],m,n,i,j;
+
+	cout<<"\nENTER THE ROWS AND COLUMS OF MATRIX: ";
+	cin>>m>>n;
+	cout<<"\n ENTER ELEMENTS OF MATRIX :\n";
+	for(i=0;i<m;i++)
+	{
+		for(j=0;j<n;j++)
+		  cin>>a[i][j];
+
+	}
+	cout<<"\n ELEMENTS OF MATRIX: \n";
+	for(i=0;i<m;i++)
+	{
+		for(j=0;j<n;j++)
+		  cout<<a[i][j]<<" ";
+		cout<<"\n";
+	}
+	cout<<"\n TRANSPOSE OF MATRIX: \n";
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<m;j++)
+			cout<<a[j][i]<<" ";
+		cout<<"\n";
+	}
+
+}
